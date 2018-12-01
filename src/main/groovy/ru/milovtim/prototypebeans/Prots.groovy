@@ -37,4 +37,9 @@ class Prots {
     Worker stdoutSingletonWorker() {
         new WorkerImpl('Singleton')
     }
+
+    @Bean
+    Classifier classifier() {
+        new Classifier(specific: "Some property of singleton dependency")
+    }
 }
